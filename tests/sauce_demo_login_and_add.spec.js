@@ -112,10 +112,10 @@ test.describe.only(() => {
                                 await landingPage.interactionButton(articleInteraction.remove).first().click();
                                 await expect.soft(landingPage.cartItem).toBeVisible();
                                 throw new Error('Remove button should not be clickable for error_user.');
-                                } catch (e) {
-                                    console.error('The article was removed');
-                                }
-                            });
+                            } catch (e) {
+                                console.error('The article could not be removed');
+                            }
+                        });
                         break;
                     case username.performanceGlitchUser:
                         await test.step('Verify the delay doing login', async () => {
