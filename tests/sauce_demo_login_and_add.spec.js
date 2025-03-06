@@ -5,12 +5,12 @@ const articleInteraction = productVariables.landing;
 const cart = productVariables.cart;
 const generateTitle = user => `Should be able to login with ${user} and add an item to the cart`;
 const username = {
-    // standardUser: 'standard_user',
-    // lockedOutUser: 'locked_out_user',
-    // problemUser: 'problem_user', 
-    // performanceGlitchUser: 'performance_glitch_user',
+    standardUser: 'standard_user',
+    lockedOutUser: 'locked_out_user',
+    problemUser: 'problem_user', 
+    performanceGlitchUser: 'performance_glitch_user',
     errorUser: 'error_user',
-    // visualUser: 'visual_user',
+    visualUser: 'visual_user',
 };
 
 test.beforeEach(async ({ page }) => {
