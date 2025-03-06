@@ -22,7 +22,7 @@ test.afterEach(async ({ page }) => {
 });
 
 test.describe.configure({mode: 'parallel'});
-test.describe.only(() => {
+test.describe(() => {
     for (const user in username) {
         test(generateTitle(user), async ({page}, testInfo) => {
             const { LoginPage } = require('../pages/loginPage');
